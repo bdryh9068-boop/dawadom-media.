@@ -1,0 +1,302 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>مراجعة منشورات الجمعية</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+/* layout: one column of weekly post cards, each pairing the two designs with its copy and sources */
+:root{--bg:#F2F5F4;--surface:#FFFFFF;--line:#D5E0DF;--ink:#16292B;--muted:#56696B;--teal:#105C63;--gold:#A88F3E;--gold-soft:#EFE7CF;--man:#8C5A2B;
+--display:"Reem Kufi","IBM Plex Sans Arabic",Tahoma,sans-serif;--body:"IBM Plex Sans Arabic",Tahoma,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1C1E;--surface:#14282B;--line:#25403F;--ink:#E4EEED;--muted:#9DB3B2;--teal:#6FB7BD;--gold:#D2B969;--gold-soft:#2D2A1C;--man:#E0A86F;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1C1E;--surface:#14282B;--line:#25403F;--ink:#E4EEED;--muted:#9DB3B2;--teal:#6FB7BD;--gold:#D2B969;--gold-soft:#2D2A1C;--man:#E0A86F;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;direction:rtl}
+.wrap{max-width:900px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 40px;display:grid;gap:20px}
+h1{font-family:var(--display);color:var(--teal);margin:0;font-size:1.7rem;text-wrap:balance}
+.lead{color:var(--muted);margin:4px 0 0}
+.note{background:var(--gold-soft);border-radius:12px;padding:12px 16px;font-size:.92rem}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:10px;min-width:0}
+.post header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:8px}
+.day{font-family:var(--display);font-size:1.3rem;color:var(--teal)}.date,.time{color:var(--muted)}.num{font-variant-numeric:tabular-nums}
+.plats{display:flex;flex-wrap:wrap;gap:6px}.plats span{font-size:.78rem;border-radius:999px;padding:1px 10px;border:1px solid var(--line)}
+.plats .auto{color:var(--teal);border-color:var(--teal)}.plats .man{color:var(--man);border-color:var(--man)}.plats .tag{background:var(--gold-soft);border-color:transparent}
+.imgs{display:grid;grid-template-columns:4fr 2.25fr;gap:10px;align-items:start}
+.imgs a{display:grid;gap:4px;color:var(--muted);text-decoration:none;font-size:.78rem;text-align:center}
+.vid{display:grid;gap:6px;justify-items:center}.vid video{width:min(100%,340px);aspect-ratio:9/16;border-radius:10px;background:#000;display:block}.vid a{color:var(--teal);font-size:.85rem}
+.imgs img{width:100%;border-radius:10px;border:1px solid var(--line);display:block}
+h3{margin:6px 0 0;font-size:.85rem;color:var(--muted);font-weight:600}
+.cap{white-space:pre-wrap;font-family:var(--body);background:var(--bg);border-radius:10px;padding:10px 12px;margin:0;font-size:.95rem;overflow-wrap:anywhere}
+button{justify-self:start;font:inherit;font-size:.85rem;border:1px solid var(--teal);color:var(--teal);background:transparent;border-radius:8px;padding:3px 12px;cursor:pointer}
+button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.src{margin:0;padding-inline-start:18px;color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}
+.manual{display:grid;gap:12px}
+h2{font-family:var(--display);color:var(--teal);margin:0;font-size:1.25rem}
+.m{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+.mimg img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.mbody{display:grid;gap:8px;min-width:0;align-content:start}.mh{color:var(--muted)}
+.mb{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font-size:.85rem;border:1px solid var(--teal);background:var(--teal);color:var(--surface);border-radius:8px;padding:3px 12px;text-decoration:none}
+.sec{margin-top:8px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:20;padding:calc(12px + env(safe-area-inset-top,0px)) 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.lbbox{display:grid;gap:8px;justify-items:center;max-width:520px;width:100%}.lbbox img{max-height:75vh;width:auto;max-width:100%;border-radius:8px}.lbbox p{color:#fff;margin:0;font-size:.85rem}
+.lbbox button{color:#fff;border-color:#fff}
+.toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--teal);color:var(--surface);border-radius:999px;padding:4px 16px;opacity:0;transition:opacity .2s}
+.toast.show{opacity:1}
+@media (max-width:520px){.imgs{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){.manual{display:grid;gap:12px}
+h2{font-family:var(--display);color:var(--teal);margin:0;font-size:1.25rem}
+.m{display:grid;grid-template-columns:120px minmax(0,1fr);gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+.mimg img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+.mbody{display:grid;gap:8px;min-width:0;align-content:start}.mh{color:var(--muted)}
+.mb{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font-size:.85rem;border:1px solid var(--teal);background:var(--teal);color:var(--surface);border-radius:8px;padding:3px 12px;text-decoration:none}
+.sec{margin-top:8px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:20;padding:calc(12px + env(safe-area-inset-top,0px)) 12px calc(12px + env(safe-area-inset-bottom,0px))}
+.lbbox{display:grid;gap:8px;justify-items:center;max-width:520px;width:100%}.lbbox img{max-height:75vh;width:auto;max-width:100%;border-radius:8px}.lbbox p{color:#fff;margin:0;font-size:.85rem}
+.lbbox button{color:#fff;border-color:#fff}
+.toast{transition:none}}
+</style>
+<div class="wrap" dir="rtl" lang="ar">
+  <div><h1>مراجعة منشورات الجمعية</h1><p class="lead">من 22 إلى 31 أكتوبر 2026 · مجدولة في Buffer · 13 منشورات · حسابات الجمعية العادية</p></div>
+  <p class="note">راجعي التصميم والنص والمصدر لكل منشور. إكس: صورة بقالب الجمعية مع حديث أو آية أو مشروع. تيك توك: فيديو من برامج الجمعية بهويتها. بعد موافقتك تُجدول في Buffer تلقائياً، أما سناب وحالة واتساب فتنشرها عالية يدوياً من صورة الستوري ونصها. اضغطي على أي صورة لفتحها بحجمها الكامل.</p>
+  <section class="manual" id="manual"><h2>للنشر اليدوي: سناب وحالة واتساب</h2>
+  <p class="lead">اضغطي «فتح الصورة لحفظها» ثم اضغطي مطولاً على الصورة واختاري «حفظ»، وبعدها «نسخ النص» والصقيه مع الستوري.</p>
+  <div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-thu_story.jpg" data-lb="img/w0-thu_story.jpg" target="_blank" rel="noopener"><img src="img/w0-thu_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الخميس</span> <span class="date">22/10</span> · <span class="num">8:00 م</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w0-thu">صدقة جارية، وعلم يُنتفع به، وولد صالح يدعو له
+ثلاثة لا ينقطع أجرها</pre>
+  <div class="mb"><button type="button" data-copy="m-w0-thu">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-thu_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-23/umrah-report-1448.jpg" data-lb="img/w0-umrah.jpg" target="_blank" rel="noopener"><img src="img/w0-umrah.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الجمعة</span> <span class="date">23/10</span> · <span class="num">8:00 ص</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w0-umrah">تقرير كفالة معتمر 1448هـ
+97 معتمراً في الرحلة (19-20) · تقبّل الله منهم</pre>
+  <div class="mb"><button type="button" data-copy="m-w0-umrah">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-23/umrah-report-1448.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-fri2_story.jpg" data-lb="img/w0-fri2_story.jpg" target="_blank" rel="noopener"><img src="img/w0-fri2_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الجمعة</span> <span class="date">23/10</span> · <span class="num">9:00 ص</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w0-fri2">سنن يوم الجمعة
+الاغتسال · التطيّب · لبس أحسن الثياب · التبكير · سورة الكهف · الصلاة على النبي ﷺ · الدعاء</pre>
+  <div class="mb"><button type="button" data-copy="m-w0-fri2">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-fri2_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22-v2/w0-fri_story.jpg" data-lb="img/w0-fri_story.jpg" target="_blank" rel="noopener"><img src="img/w0-fri_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الجمعة</span> <span class="date">23/10</span> · <span class="num">3:45 م</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w0-fri">في يوم الجمعة ساعة إجابة
+أكثروا فيها من الدعاء</pre>
+  <div class="mb"><button type="button" data-copy="m-w0-fri">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22-v2/w0-fri_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-mon_story.jpg" data-lb="img/w1-mon_story.jpg" target="_blank" rel="noopener"><img src="img/w1-mon_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الاثنين</span> <span class="date">26/10</span> · <span class="num">7:00 ص</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w1-mon">اليوم الاثنين
+تُعرض فيه الأعمال على الله، وصيامه سنة لمن استطاع.</pre>
+  <div class="mb"><button type="button" data-copy="m-w1-mon">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-mon_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v4/w1-tue_story.jpg" data-lb="img/w1-tue_story.jpg" target="_blank" rel="noopener"><img src="img/w1-tue_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الثلاثاء</span> <span class="date">27/10</span> · <span class="num">8:00 م</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w1-tue">مصابيح الهداية
+كن شريكاً في أجر كل من يهتدي · أرسل 1 إلى 588162</pre>
+  <div class="mb"><button type="button" data-copy="m-w1-tue">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v4/w1-tue_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-thu_story.jpg" data-lb="img/w1-thu_story.jpg" target="_blank" rel="noopener"><img src="img/w1-thu_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الخميس</span> <span class="date">29/10</span> · <span class="num">7:00 ص</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w1-thu">﴿وَمَآ أَنفَقۡتُم مِّن شَيۡءٖ فَهُوَ يُخۡلِفُهُۥۖ وَهُوَ خَيۡرُ ٱلرَّـٰزِقِينَ﴾
+[سبإ: 39]</pre>
+  <div class="mb"><button type="button" data-copy="m-w1-thu">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-thu_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div>
+<div class="m">
+  <a class="mimg" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-fri_story.jpg" data-lb="img/w1-fri_story.jpg" target="_blank" rel="noopener"><img src="img/w1-fri_story.jpg" alt="صورة الستوري" loading="lazy"></a>
+  <div class="mbody"><div class="mh"><span class="day">الجمعة</span> <span class="date">30/10</span> · <span class="num">9:00 ص</span></div>
+  <div class="plats"><span class="man">سناب</span><span class="man">حالة واتساب</span></div>
+  <pre class="cap" id="m-w1-fri">جمعة مباركة
+بكّر إلى الصلاة، وأكثر من الصلاة على النبي ﷺ</pre>
+  <div class="mb"><button type="button" data-copy="m-w1-fri">نسخ النص</button><a class="btn" href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-fri_story.jpg" target="_blank" rel="noopener">فتح الصورة لحفظها</a></div></div>
+</div></section>
+  <h2 class="sec">كل المنشورات المجدولة</h2>
+  <article class="post" id="w0-thu">
+  <header><div><span class="day">الخميس</span> <span class="date">22/10</span></div><span class="time num">8:00 م</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">حديث</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-thu_post.jpg" data-lb="img/w0-thu_post.jpg" target="_blank" rel="noopener"><img src="img/w0-thu_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-thu_story.jpg" data-lb="img/w0-thu_story.jpg" target="_blank" rel="noopener"><img src="img/w0-thu_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-thu">قال رسول الله ﷺ: «إذا ماتَ الإنسانُ انقَطَعَ عنه عَمَلُه إلَّا مِن ثَلاثةٍ: إلَّا مِن صَدَقةٍ جاريةٍ، أو عِلمٍ يُنتَفَعُ به، أو ولَدٍ صالِحٍ يَدعو له».
+رواه مسلم (1631).
+
+اجعل لك عملاً لا ينقطع.
+#صدقة_جارية #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w0-thu">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w0-thu">صدقة جارية، وعلم يُنتفع به، وولد صالح يدعو له
+ثلاثة لا ينقطع أجرها</pre><button type="button" data-copy="s-w0-thu">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>https://dorar.net — صحيح مسلم 1631</li></ul>
+</article>
+<article class="post" id="w0-tt1">
+  <header><div><span class="day">الخميس</span> <span class="date">22/10</span></div><span class="time num">9:00 م</span></header>
+  <div class="plats"><span class="auto">تيك توك · تلقائي</span><span class="tag">فيديو</span></div>
+  <div class="vid"><video controls playsinline preload="none" poster="img/w0-tt1_cover.jpg" src="img/w0-tt1.mp4"></video><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-tt1.mp4" target="_blank" rel="noopener">فتح الفيديو لحفظه</a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-tt1">لك نصيبٌ منها
+كل كلمة دعوة يسمعها مسلم جديد في حلقات «مصابيح الهداية» بأم الدوم، لك منها نصيب إن كنت سبباً فيها.
+
+كن شريكاً في الأجر: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+#مصابيح_الهداية #الدعوة_إلى_الله #أم_الدوم</pre><button type="button" data-copy="c-w0-tt1">نسخ النص</button>
+  
+  <h3>المصادر</h3><ul class="src"><li>فيديو من برامج الجمعية</li></ul>
+</article>
+<article class="post" id="w0-umrah">
+  <header><div><span class="day">الجمعة</span> <span class="date">23/10</span></div><span class="time num">8:00 ص</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">مشروع</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-23/umrah-report-1448.jpg" data-lb="img/w0-umrah.jpg" target="_blank" rel="noopener"><img src="img/w0-umrah.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-23/umrah-report-1448.jpg" data-lb="img/w0-umrah.jpg" target="_blank" rel="noopener"><img src="img/w0-umrah.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-umrah">تقرير كفالة معتمر لعام 1448هـ
+انطلقت الرحلة (19-20) يوم الخميس 11 جمادى الأولى 1448هـ بـ 97 معتمراً، مع داعية مرافق للإرشاد وتعليم المناسك، ووجبات لجميع المعتمرين، في بيئة إيمانية آمنة.
+
+تقبّل الله منهم، وجزى الله الداعمين خيراً.
+#كفالة_معتمر #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w0-umrah">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w0-umrah">تقرير كفالة معتمر 1448هـ
+97 معتمراً في الرحلة (19-20) · تقبّل الله منهم</pre><button type="button" data-copy="s-w0-umrah">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>تصميم الجمعية</li></ul>
+</article>
+<article class="post" id="w0-fri2">
+  <header><div><span class="day">الجمعة</span> <span class="date">23/10</span></div><span class="time num">9:00 ص</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">بطاقة تذكير</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-fri2_post.jpg" data-lb="img/w0-fri2_post.jpg" target="_blank" rel="noopener"><img src="img/w0-fri2_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22/w0-fri2_story.jpg" data-lb="img/w0-fri2_story.jpg" target="_blank" rel="noopener"><img src="img/w0-fri2_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-fri2">سنن يوم الجمعة:
+الاغتسال، والتطيّب، ولبس أحسن الثياب، والتبكير إلى المسجد، وقراءة سورة الكهف، والإكثار من الصلاة على النبي ﷺ ومن الدعاء.
+
+جمعة مباركة.
+#الجمعة #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w0-fri2">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w0-fri2">سنن يوم الجمعة
+الاغتسال · التطيّب · لبس أحسن الثياب · التبكير · سورة الكهف · الصلاة على النبي ﷺ · الدعاء</pre><button type="button" data-copy="s-w0-fri2">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>الاغتسال والتطيب والتبكير: البخاري 881 و883</li><li>لبس أحسن الثياب: أبو داود 343 وحسنه الألباني</li><li>سورة الكهف: صحيح الجامع 6470 للألباني</li><li>الصلاة على النبي: صحيح الترغيب 1674 (dorar.net/h/wDqqgNh7)</li><li>الدعاء: البخاري 935 ومسلم 852</li></ul>
+</article>
+<article class="post" id="w0-fri">
+  <header><div><span class="day">الجمعة</span> <span class="date">23/10</span></div><span class="time num">3:45 م</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">حديث</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22-v2/w0-fri_post.jpg" data-lb="img/w0-fri_post.jpg" target="_blank" rel="noopener"><img src="img/w0-fri_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22-v2/w0-fri_story.jpg" data-lb="img/w0-fri_story.jpg" target="_blank" rel="noopener"><img src="img/w0-fri_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-fri">ذكر رسول الله ﷺ يوم الجمعة فقال: «فيه ساعةٌ لا يُوافِقُها عبدٌ مسلمٌ وهو قائمٌ يُصلِّي يسألُ اللهَ تعالى شيئًا إلا أعطاه إيَّاه».
+رواه البخاري (935) ومسلم (852).
+
+أكثروا من الدعاء في يوم الجمعة.
+#الجمعة #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w0-fri">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w0-fri">في يوم الجمعة ساعة إجابة
+أكثروا فيها من الدعاء</pre><button type="button" data-copy="s-w0-fri">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>https://dorar.net — صحيح البخاري 935</li></ul>
+</article>
+<article class="post" id="w0-tt2">
+  <header><div><span class="day">الجمعة</span> <span class="date">23/10</span></div><span class="time num">8:30 م</span></header>
+  <div class="plats"><span class="auto">تيك توك · تلقائي</span><span class="tag">فيديو</span></div>
+  <div class="vid"><video controls playsinline preload="none" poster="img/w0-tt2_cover.jpg" src="img/w0-tt2.mp4"></video><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-22-v2/w0-tt2.mp4" target="_blank" rel="noopener">فتح الفيديو لحفظه</a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w0-tt2">علّمهم دينهم
+في برنامج «السبع المثاني» تتعلّم الجاليات والمسلمون الجدد بأم الدوم ما لا يسع المسلم جهله من أحكام دينه.
+
+كن شريكاً في الأجر: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+#السبع_المثاني #مسلم_جديد #أم_الدوم</pre><button type="button" data-copy="c-w0-tt2">نسخ النص</button>
+  
+  <h3>المصادر</h3><ul class="src"><li>فيديو من برامج الجمعية</li></ul>
+</article>
+<article class="post" id="w1-mon">
+  <header><div><span class="day">الاثنين</span> <span class="date">26/10</span></div><span class="time num">7:00 ص</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">حديث</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-mon_post.jpg" data-lb="img/w1-mon_post.jpg" target="_blank" rel="noopener"><img src="img/w1-mon_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-mon_story.jpg" data-lb="img/w1-mon_story.jpg" target="_blank" rel="noopener"><img src="img/w1-mon_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-mon">اليوم الاثنين، وفيه تُعرض الأعمال على الله.
+قال رسول الله ﷺ: «تُعرَضُ الأعمالُ يومَ الاثنينِ والخميسِ، فأُحِبُّ أنْ يُعرَضَ عملي وأنا صائمٌ».
+رواه الترمذي (747) وصححه الألباني.
+
+ذكّر من تحب بهذه السنة.
+#صيام_الاثنين #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w1-mon">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w1-mon">اليوم الاثنين
+تُعرض فيه الأعمال على الله، وصيامه سنة لمن استطاع.</pre><button type="button" data-copy="s-w1-mon">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>https://dorar.net/hadith/search?q=تعرض الأعمال يوم الاثنين والخميس</li><li>البخاري 6464، مسلم 783</li></ul>
+</article>
+<article class="post" id="w1-tt1">
+  <header><div><span class="day">الاثنين</span> <span class="date">26/10</span></div><span class="time num">8:00 م</span></header>
+  <div class="plats"><span class="auto">تيك توك · تلقائي</span><span class="tag">فيديو</span></div>
+  <div class="vid"><video controls playsinline preload="none" poster="img/w1-tt1_cover.jpg" src="img/w1-tt1.mp4"></video><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-tt1.mp4" target="_blank" rel="noopener">فتح الفيديو لحفظه</a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-tt1">دعاؤهم لك لا ينقطع
+مسلمون جدد تعلّموا دينهم في مشروع «مصابيح الهداية» بأم الدوم، ويدعون لكل من كان سبباً في هدايتهم.
+
+كن شريكاً في الأجر: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+#مصابيح_الهداية #الدعوة_إلى_الله #أم_الدوم</pre><button type="button" data-copy="c-w1-tt1">نسخ النص</button>
+  
+  <h3>المصادر</h3><ul class="src"><li>فيديو من برامج الجمعية</li></ul>
+</article>
+<article class="post" id="w1-tue">
+  <header><div><span class="day">الثلاثاء</span> <span class="date">27/10</span></div><span class="time num">8:00 م</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">مشروع</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v4/w1-tue_post.jpg" data-lb="img/w1-tue_post.jpg" target="_blank" rel="noopener"><img src="img/w1-tue_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v4/w1-tue_story.jpg" data-lb="img/w1-tue_story.jpg" target="_blank" rel="noopener"><img src="img/w1-tue_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-tue">مصابيح الهداية
+مشروع دعوي يدعو الجاليات وغير المسلمين بالحوار الحسن، ويعلّم المسلمين الجدد العقيدة الصحيحة وأحكام دينهم، ويكفل الدعاة.
+
+كن شريكاً في أجر كل من يهتدي: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+أو تبرّع عبر: dawahdom.org.sa
+#مصابيح_الهداية #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w1-tue">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w1-tue">مصابيح الهداية
+كن شريكاً في أجر كل من يهتدي · أرسل 1 إلى 588162</pre><button type="button" data-copy="s-w1-tue">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>ملف بطاقة المشاريع لموسم الحج 2026م</li></ul>
+</article>
+<article class="post" id="w1-tt2">
+  <header><div><span class="day">الأربعاء</span> <span class="date">28/10</span></div><span class="time num">8:00 م</span></header>
+  <div class="plats"><span class="auto">تيك توك · تلقائي</span><span class="tag">فيديو</span></div>
+  <div class="vid"><video controls playsinline preload="none" poster="img/w1-tt2_cover.jpg" src="img/w1-tt2.mp4"></video><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-tt2.mp4" target="_blank" rel="noopener">فتح الفيديو لحفظه</a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-tt2">مسلمٌ جديد يتعلّم الوضوء
+في برنامج «السبع المثاني» يتعلّم المسلمون الجدد والجاليات ما لا يسع المسلم جهله، خطوة بخطوة.
+
+كن شريكاً في الأجر: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+#مسلم_جديد #السبع_المثاني #أم_الدوم</pre><button type="button" data-copy="c-w1-tt2">نسخ النص</button>
+  
+  <h3>المصادر</h3><ul class="src"><li>فيديو من برامج الجمعية</li></ul>
+</article>
+<article class="post" id="w1-thu">
+  <header><div><span class="day">الخميس</span> <span class="date">29/10</span></div><span class="time num">7:00 ص</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">آية</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-thu_post.jpg" data-lb="img/w1-thu_post.jpg" target="_blank" rel="noopener"><img src="img/w1-thu_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-thu_story.jpg" data-lb="img/w1-thu_story.jpg" target="_blank" rel="noopener"><img src="img/w1-thu_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-thu">﴿وَمَآ أَنفَقۡتُم مِّن شَيۡءٖ فَهُوَ يُخۡلِفُهُۥۖ وَهُوَ خَيۡرُ ٱلرَّـٰزِقِينَ﴾ [سبإ: 39]
+
+واليوم الخميس، وصيامه سنة لمن استطاع.
+#الخميس #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w1-thu">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w1-thu">﴿وَمَآ أَنفَقۡتُم مِّن شَيۡءٖ فَهُوَ يُخۡلِفُهُۥۖ وَهُوَ خَيۡرُ ٱلرَّـٰزِقِينَ﴾
+[سبإ: 39]</pre><button type="button" data-copy="s-w1-thu">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>المصحف: سورة سبأ 39</li></ul>
+</article>
+<article class="post" id="w1-fri">
+  <header><div><span class="day">الجمعة</span> <span class="date">30/10</span></div><span class="time num">9:00 ص</span></header>
+  <div class="plats"><span class="auto">إكس · تلقائي</span><span class="man">سناب · يدوي</span><span class="man">حالة واتساب · يدوي</span><span class="tag">آية</span></div>
+  <div class="imgs"><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-fri_post.jpg" data-lb="img/w1-fri_post.jpg" target="_blank" rel="noopener"><img src="img/w1-fri_post.jpg" alt="تصميم المنشور" loading="lazy"><span>إكس 4:5</span></a><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-fri_story.jpg" data-lb="img/w1-fri_story.jpg" target="_blank" rel="noopener"><img src="img/w1-fri_story.jpg" alt="تصميم الستوري" loading="lazy"><span>ستوري 9:16</span></a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-fri">﴿يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِذَا نُودِيَ لِلصَّلَوٰةِ مِن يَوۡمِ ٱلۡجُمُعَةِ فَٱسۡعَوۡاْ إِلَىٰ ذِكۡرِ ٱللَّهِ وَذَرُواْ ٱلۡبَيۡعَۚ ذَٰلِكُمۡ خَيۡرٌ لَّكُمۡ إِن كُنتُمۡ تَعۡلَمُونَ﴾ [الجمعة: 9]
+
+جمعة مباركة. بكّر إلى الصلاة، وأكثر من الصلاة على النبي ﷺ.
+#الجمعة #جمعية_الدعوة_بأم_الدوم</pre><button type="button" data-copy="c-w1-fri">نسخ النص</button>
+  <h3>نص الستوري</h3><pre class="cap" id="s-w1-fri">جمعة مباركة
+بكّر إلى الصلاة، وأكثر من الصلاة على النبي ﷺ</pre><button type="button" data-copy="s-w1-fri">نسخ النص</button>
+  <h3>المصادر</h3><ul class="src"><li>المصحف: سورة الجمعة 9</li><li>https://dorar.net/h/wDqqgNh7</li></ul>
+</article>
+<article class="post" id="w1-tt3">
+  <header><div><span class="day">السبت</span> <span class="date">31/10</span></div><span class="time num">8:00 م</span></header>
+  <div class="plats"><span class="auto">تيك توك · تلقائي</span><span class="tag">فيديو</span></div>
+  <div class="vid"><video controls playsinline preload="none" poster="img/w1-tt3_cover.jpg" src="img/w1-tt3.mp4"></video><a href="https://raw.githubusercontent.com/bdryh9068-boop/dawadom-media./main/posts/2026-10-26-v2/w1-tt3.mp4" target="_blank" rel="noopener">فتح الفيديو لحفظه</a></div>
+  <h3>نص المنشور</h3><pre class="cap" id="c-w1-tt3">الصلاة عمود الدين
+يتعلّم المسلم الجديد صلاته صحيحة في حلقات جمعية الدعوة بأم الدوم.
+
+كن شريكاً في الأجر: أرسل 1 إلى 588162 (12 ريالاً شهرياً)
+#الصلاة #مسلم_جديد #أم_الدوم</pre><button type="button" data-copy="c-w1-tt3">نسخ النص</button>
+  
+  <h3>المصادر</h3><ul class="src"><li>فيديو من برامج الجمعية</li></ul>
+</article>
+</div>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="الصورة بحجمها الكامل"><div class="lbbox"><img id="lbImg" alt="الصورة بحجمها الكامل"><p>اضغطي مطولاً على الصورة ثم «حفظ الصورة»</p><div class="mb"><a class="btn" id="lbOpen" href="#" target="_blank" rel="noopener">فتح في المتصفح</a><button type="button" id="lbClose">إغلاق</button></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+document.addEventListener('click',async e=>{const b=e.target.closest('button[data-copy]');if(!b)return;const t=document.getElementById(b.dataset.copy).textContent;const ok=m=>{const x=document.getElementById('toast');x.textContent=m;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),1500)};try{await navigator.clipboard.writeText(t);ok('نُسخ النص')}catch(_){const r=document.createRange();r.selectNodeContents(document.getElementById(b.dataset.copy));const s=getSelection();s.removeAllRanges();s.addRange(r);ok('حددت النص، انسخيه يدوياً')}});
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-lb]');if(a){e.preventDefault();document.getElementById('lbImg').src=a.dataset.lb;document.getElementById('lbOpen').href=a.href;document.getElementById('lb').hidden=false;return}
+if(e.target.id==='lbClose'||e.target.id==='lb'){document.getElementById('lb').hidden=true}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').hidden=true});
+</script>
+
+</body></html>
